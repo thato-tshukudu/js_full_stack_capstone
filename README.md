@@ -1,12 +1,83 @@
-# IBMFSJS
-## IBM Full-Stack JavaScript Developer Professional Certificate (12 course series)
+# JavaScript Full Stack Capstone Project: GiftLink
 
-Prepare for a career in the high-growth field of full-stack development. In this program, you’ll learn skills like React, JavaScript, and Node to get job-ready in less than 4 months, with no prior experience needed to get started.. 
+## Overview
 
-A full-stack JavaScript developer is responsible for both the front-end (client-side) and back-end (server side) development of web applications.
+This is a full-stack JavaScript application for a gift linking platform. The project demonstrates full-stack development skills with Node.js backend, React frontend, and MongoDB database.
 
-In this program, you’ll learn to build, deploy, test, run, and manage cloud-native full-stack applications. Technologies covered include HTML, CSS, GitHub, JavaScript, Node.js, Express, React, DevOps, Containers, Docker, Kubernetes, NoSQL databases, Microservices, Serverless computing, and more. 
+## Features
 
- You’ll also develop several applications using front-end and back-end technologies and deploy them using cloud-native methodologies. In the final course, you learn inside tips and steps to perform effectively at interviews and unlock exclusive access to career support resources to help you in your job search.
+- User authentication (login and registration)
+- Gift search functionality
+- Gift details page
+- User profile management
+- Sentiment analysis integration
 
-Upon completing the full program, you will have a portfolio of projects that will not only boost your confidence but also prepare you to excel in interviews. Additionally, you will be awarded a Professional Certificate and a badge from IBM, serving as tangible proof of your skills and proficiency to potential employers.
+## Project Structure
+
+- `giftlink-backend/`: Node.js/Express backend with API routes for authentication, gifts, and search
+- `giftlink-frontend/`: React frontend application
+- `sentiment/`: Sentiment analysis module
+- `db.js`, `app.js`, etc.: Additional backend files
+- `user-story.md`: Project user stories and requirements
+
+## Installation
+
+### Prerequisites
+
+- Node.js
+- MongoDB
+- npm or yarn
+
+### Backend Setup
+
+```bash
+cd giftlink-backend
+npm install
+```
+
+### Frontend Setup
+
+```bash
+cd giftlink-frontend
+npm install
+```
+
+## Running the Application
+
+### Start Backend
+
+```bash
+cd giftlink-backend
+npm start
+```
+
+The backend will run on `http://localhost:3001` (or configured port).
+
+### Start Frontend
+
+```bash
+cd giftlink-frontend
+npm start
+```
+
+The frontend will run on `http://localhost:3000`.
+
+## Database
+
+The application uses MongoDB. Ensure MongoDB is installed and running. Database configuration is in `giftlink-backend/models/db.js`.
+
+To populate the database with initial data, run the import script in `giftlink-backend/util/import-mongo/`.
+
+## Technologies Used
+
+- **Backend**: Node.js, Express.js, MongoDB, JWT for authentication
+- **Frontend**: React, CSS
+- **Other**: Sentiment analysis (possibly using external libraries)
+
+## Contributing
+
+This is a capstone project. For any issues or improvements, please refer to the user stories in `user-story.md`.
+
+## License
+
+This project is for educational purposes.
